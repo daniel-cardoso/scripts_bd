@@ -1,0 +1,37 @@
+create database db_diversos;
+
+use db_diversos;
+
+create table alunos(
+	id bigint auto_increment NOT NULL,
+    idade int NOT NULL,
+    nome varchar(100) NOT NULL,
+    sobrenome varchar(50)NOT NULL,
+    ra varchar(15)NOT NULL,
+    numero_turma int(2)NOT NULL,
+    curso varchar(30)NOT NULL,
+    primary key (id));
+    
+   
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (18,"João","Silva",1,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (15,"Antonio","Silva",2 ,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (20,"Maria","Silva",3,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (18,"Joana","Silva", 4,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (22,"Kleber","Silva",5,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (19,"Luana","Silva", 6,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (21,"Luis", "Souza",7,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (20,"Jonas","Souza",8,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (23,"Paloma","Souza",9,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (30,"Luiza","Souza", 10,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (28,"Bianca","Souza",11,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (24,"Carla","Silva",12 ,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (22,"Pedro","Silva", 13,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (21,"Bira", "Souza",14 ,7,"Java Web");
+INSERT INTO alunos (idade,nome,sobrenome,ra,numero_turma,curso) VALUES (22,"Paulo","Souza", 15 ,7,"Java Web");
+  
+  
+select * from alunos where idade > 18;
+  
+select * from alunos where idade < 18;
+
+select * from alunos where idade between 20 and 25;

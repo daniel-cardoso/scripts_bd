@@ -1,0 +1,36 @@
+use db_diversos;
+
+create table produtos(
+	id bigint auto_increment NOT NULL,
+    preco decimal(10,2) NOT NULL,
+    nome varchar(100) NOT NULL,
+    categoria varchar(50)NOT NULL,
+    material varchar(50)NOT NULL,
+    cor varchar(50)NOT NULL,
+	pronta_entrega char(1)NOT NULL,
+    primary key (id));
+    
+
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (500.00,"mesa","cozinha","madeira","marrom","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (500.00,"mesa","cozinha","madeira","marrom","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (500.00,"mesa","cozinha","madeira","marrom","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (500.00,"mesa","cozinha","madeira","bege","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (500.00,"mesa","cozinha","madeira","bege","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (500.00,"mesa","cozinha","madeira","bege","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (1500.00,"armario","cozinha","madeira","bege","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (800.00,"cama","quarto","madeira","branca","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (800.00,"cama","quarto","madeira","branca","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (800.00,"cama","quarto","madeira","branca","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (2500.00,"sofá","sala","couro","preto","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (2500.00,"sofá","sala","couro","preto","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (2500.00,"sofá","sala","couro","marrom","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (2500.00,"sofá","sala","couro","marrom","n");
+INSERT INTO produtos (preco,nome,categoria,material,cor,pronta_entrega) VALUES (2500.00,"sofá","sala","couro","roxo","n");
+
+select * from produtos where nome like 'a%';
+
+select * from produtos where categoria = 'cozinha';
+
+select * from produtos where preco between 1000 and 1500;
+
+select * from produtos where categoria like 's%a';
